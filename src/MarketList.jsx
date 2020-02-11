@@ -2,7 +2,16 @@ import React from "react";
 import Market from "./Market";
 
 
+var headerStyles = {
+  fontFamily: 'sans-serif',
+  position: 'absolute',
+  color: "#663300",
+  fontSize: "13px",
+  textshadow: "3px 3px white",
+  width: "50%",
+  zIndex: "+1"
 
+};
 
 const marketSchedule = [
  {
