@@ -6,10 +6,11 @@ var headerStyles = {
   fontFamily: 'sans-serif',
   position: 'absolute',
   color: "#663300",
-  fontSize: "13px",
+  fontSize: "16px",
   textshadow: "3px 3px white",
-  width: "50%",
+  width: "100%",
   zIndex: "+1"
+
 
 };
 
@@ -55,7 +56,6 @@ const marketSchedule = [
 function MarketList(){
   return (
     <div style={headerStyles}>
-    <hr/>
     {marketSchedule.map((market,index) =>
       <Market
       day={market.day}

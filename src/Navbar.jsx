@@ -4,11 +4,13 @@ var align ={
   position: "left"
 }
 var navButton = {
-    fontSize: "30px",
-    borderRadius: "15%",
-    backgroundColor: "rgba(0,0,0,0)",
-
-    color: "white"
+  fontFamily: 'Fira Sans',
+  fontSize: "30px",
+  borderRadius: "50%",
+  backgroundColor: "rgba(0,0,0,0)",
+  margin: "1%",
+  color: "#663300"
+  
 }
 
 function Navbar(){

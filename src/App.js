@@ -4,42 +4,49 @@ import './App.css';
 import Navbar from './Navbar.jsx';
 import MarketList from './MarketList.jsx';
 import AboutUs from './AboutUs.jsx';
+import ProduceList from './ProduceList.jsx';
+
 
 var leftColumn = {
   width: "31%",
   border: "2px solid",
-  // borderRadius: "15%",
-  borderColor: "brown",
+  // borderRadius: "5%",
+  borderColor: "green",
   position: "absolute",
-  left: "1.5%"
+  left: "1.5%",
+  height: "898px",
 }
 
 var centerColumn = {
+  marginTop: "7%",
   width: "31%",
-  border: "2px solid",
-  borderRadius: "15%",
-  borderColor: "brown",
+  border: "4px solid",
+  borderRadius: "40%",
+  borderColor: "green",
   position: "absolute",
-  left: "35%",
+  left: "34.5%",
   zIndex: "+1"
 }
 
 var rightColumn = {
   width: "31%",
   border: "2px solid",
-  // borderRadius: "15%",
-  borderColor: "brown",
+  // borderRadius: "5%",
+  borderColor: "green",
   position: "absolute",
-  left: "67.5%"
-
+  left: "67.5%",
+  height: "898px",
 }
-
+var dirtStyle = {
+  color: "#663300",
+}
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <h1 style={dirtStyle}>Danny Dirtfarmer's practical produce</h1>
       <span className="navBar"><Navbar/></span>
       <div className="row">
         <div style={leftColumn}>
@@ -49,7 +56,7 @@ function App() {
           <AboutUs/>
         </div>
         <div style={rightColumn}>
-          <MarketList/>
+        <ProduceList/>
         </div>
       </div>
         <img src={Farmers} className="FarmersHeader" alt="logo" />
